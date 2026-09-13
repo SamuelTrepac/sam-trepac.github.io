@@ -1,0 +1,141 @@
+R701       *Control the ROBOT with a single ROBOT CONTROLLER. ROBOTS must be controlled via 1 programmable ROBOT CONTROLLER. The ROBOT CONTROLLER is the only source of control for the ROBOT actuators and must be comprised of:
+
+A.      a REV Control Hub (REV-31-1595), or
+
+B.      a smartphone Android device connected to a REV Expansion Hub (REV-31-1153).
+
+In addition to A or B, a ROBOT may also contain:
+
+C.      no more than one additional REV Expansion Hub (REV-31-1153).
+
+We recommend teams always keep all control system device software up to date. Check the FIRST Tech Challenge Firmware Update Page for release announcements and most recent software versions.
+
+Due to unpredictable variations in Android software across different manufacturers and updates, the REV Control Hub is the only officially supported ROBOT CONTROLLER device. Teams choosing to use any other unsupported device (e.g., smartphones) are responsible for testing and verifying its compatibility, functionality, and performance.
+
+R702       *Teams may not alter coprocessor software. Modifying software on coprocessors, unless explicitly permitted in this rule, is not allowed by teams. Firmware updates in binary form provided by the manufacturer may be applied as directed by the manufacturer. Programmable vision coprocessors natively supported by the FTC SDK are an exception to this rule, and reprogramming them is permitted. A list of programmable vision coprocessors is found in Table 12‑9.
+
+Table 12‑9: Supported programmable vision coprocessors
+
+Device
+	
+
+Part Number
+
+Limelight Vision Limelight 3A
+	
+
+LL_3A
+
+The following are examples of allowed and disallowed devices:
+
+Example 1: The Adafruit BNO055 Absolute Orientation Sensor is an IMU package with an onboard ARM Cortex-M0 based coprocessor to crunch sensor data and produce composite output. Its coprocessor contains software that is not intended by the manufacturer to be modified by users. This device is allowed.
+
+Example 2: The SparkFun Optical Tracking Odometry Sensor is a laser and IMU tracking device that uses an onboard microcontroller to perform complex calculations and produce simplified results. SparkFun does provide the source code and toolchain for advanced users to modify/update the software, which is not permitted by this rule. Firmware updates provided by SparkFun are allowed to be applied to the device. This device is allowed.
+
+Example 3: The Digital Chicken Labs OctoQuad FTC Edition is an 8-channel encoder/PWM interface, utilizing a Raspberry Pi Pico coprocessor. Teams are not permitted to modify software running on the device, including replacing the software with their own. Updates provided in binary form by the manufacturer (Digital Chicken Labs) may be applied to the device. This device is allowed.
+
+Example 4: Optical Flow sensors are an example of a sensor that utilizes a vision coprocessor that is treated no differently than other coprocessors per R702. These devices are allowed.
+
+Example 5: The DFRobot HuskyLens and the Charmed Labs Pixy2 are examples of vision coprocessors that are configurable but not programmable and are treated no differently than other coprocessors per R702. These devices are allowed.
+
+Example 6: The OpenMV Cam, Luxonis OAK-1, and LimeLight Vision Limelight 3G are examples of programmable vision coprocessors that are prohibited.
+
+R703       *Smartphone Android devices used as a ROBOT CONTROLLER must connect to the REV Expansion Hub using USB. If used as a ROBOT CONTROLLER, the smartphone Android device must be connected via its integrated USB port to a REV Expansion Hub with any combination of USB cables (including USB OTG cables) and/or USB hubs (powered or unpowered, with or without OTG integrated into the hub).
+
+R704       * Use networks and bandwidth as directed. Teams and ROBOTS must use Wi-Fi networks and bandwidth in a way that enables fair play and does not interfere with other teams or ARENA operations. Teams must abide by the following guidelines:
+
+A.      Teams may not use any other form of wireless communication, except those offered by the provided official tools, to communicate to, from, or within the ROBOT.
+
+B.      Teams may not interfere with the ROBOT networks. All communication signals must originate from only the ROBOT CONTROLLER device or the DRIVER STATION device using the ROBOT CONTROLLER Wi-Fi network. No other devices may attempt to connect to, interfere with, or alter the ROBOT CONTROLLER Wi-Fi network.
+
+C.      Ensure all programming laptops and other devices (other than the DRIVER STATION device) are disconnected from the ROBOT CONTROLLER Wi-Fi network during MATCH play.
+
+D.      Software with access to the ROBOT CONTROLLER Wi-Fi network must limit the amount of data being streamed (i.e., continuous transmission of data) over Wi-Fi. Software may only stream robot control data, debugging data, and telemetry to and from the ROBOT using the FTC Driver Station Application. Additional logging/streaming services, such as those hosted by third party plugins and tools such as FTC Dashboard, FTControl Panels, and others are prohibited. No continuous video stream is allowed.
+
+E.      Some events may assign Wi-Fi bands and/or channels to teams. If requested by event staff, teams must use the specific frequency band or channel on the day of the competition.
+
+R705       *Configure devices for your team number. The ROBOT CONTROLLER, DRIVER STATION, and any spares used must be configured/named to correspond to the correct team number as follows:
+
+A.      ROBOT CONTROLLER should be named <team number>-RC (e.g., 12345-RC),
+
+B.      DRIVER STATION should be named <team number>-DS (e.g., 12345-DS), and
+
+C.      If a spare ROBOT CONTROLLER or DRIVER STATION is configured, a letter designator may be added <team number>-<letter>-RC/DS (e.g., 12345-A-DS, 12345-B-DS)
+
+See the DRIVER STATION Instructions and ROBOT CONTROLLER Instructions for a detailed procedure for updating DRIVER STATION and ROBOT CONTROLLER “names.”
+
+R706       *Only specified modifications to core control system devices are permitted. The DRIVER STATION device and software, Android-based ROBOT CONTROLLER device, main and secondary power switch(es), power regulation devices, fuses, and batteries shall not be tampered with, modified, or adjusted in any way (tampering includes drilling, cutting, machining, rewiring, disassembling, painting, removing enclosures and replacing with custom enclosures, etc.), with the following exceptions:
+
+A.      wires, cables, and signal lines may be connected via the standard connection points provided on the devices,
+
+B.      fasteners (including adhesives) may be used to attach devices to the OPERATOR CONSOLE or ROBOT or to secure cables to the device,
+
+C.      thermal interface material may be used to improve heat conduction,
+
+D.      labeling may be applied to indicate device identification, purpose, connectivity, functional performance, etc. as long as they do not cover labels or markings used to identify the product,
+
+E.      jumpers or switches may be moved to configure devices per the manufacturer’s manual,
+
+F.      device firmware may be updated with manufacturer supplied firmware,
+
+G.     integral wires on motor controllers and batteries may be cut, stripped, and/or connectorized,
+
+H.     devices except batteries may be repaired, provided the performance and specifications of the device after the repair are identical to those before the repair,
+
+I.        insulating material may be added to exposed conductors,
+
+J.      tape may be applied for debris protection, and
+
+K.      power switch mounting brackets can be modified or replaced.
+
+Please note that while repairs are permitted, the allowance is independent of any manufacturer’s warranty. Teams make repairs at their own risk and should assume that any warranty or return options are forfeited. Repairs must be functionally equivalent to original device condition.
+
+Be aware that diagnosing and repairing COMPONENTS such as these can be difficult.
+
+For example, “repairs” that change connector types, include device footprint modifications, or provide mechanical enhancements, are prohibited.
+
+ 
+
+R707       *USB is for vision. Only the following devices may be connected to the ROBOT control system using USB:
+
+A.      webcams and optical vision sensors per R708,
+
+B.      USB hub or USB switch, and
+
+C.      a REV Expansion Hub.
+
+R708       *Use only supported USB vision. Only single image sensor vision devices that are natively supported by the ROBOT CONTROLLER app are allowed to connect to USB (stereoscopic cameras are not allowed). This includes the following:
+
+A.      all UVC compatible USB webcams (Logitech C270, and related), and
+
+B.      Vision coprocessors allowed per R702.
+
+UVC compatible USB webcams may only use the UVC provided stream / data. No other interfaces or data provided by the webcam may be used.
+
+To request support (or to provide sample drivers) for alternate USB vision devices for inclusion in future FIRST Tech Challenge seasons, please send an email to customerservice@firstinspires.org with the following details:
+
+-        Subject of email should be: “USB Vision Future Support Request”
+
+-        Contact details for providing feedback or clarifications
+
+-        Details on the device requesting support
+
+R709       *Recording devices are okay. Self-contained video recording devices (GoPro or similar) are allowed providing they are used only for non-functional post-MATCH viewing and the wireless capability is turned off.
+
+R710       *Lasers are only allowed if they’re part of a sensor, low-energy, and non-visible. Lasers are not allowed unless they meet all of the following criteria:
+
+A.      must be part of a sensor,
+
+B.      must be rated as IEC/EN 60825-1 ”Class I” or IEC/EN 62471 “Exempt,” and
+
+C.      must use non-visible spectrum.
+
+R711       *Configure Android devices appropriately. ROBOT CONTROLLER and DRIVER STATION Android devices (smartphones, REV Control Hub, REV Driver Hub) must additionally be configured in the following ways:
+
+A.      REV Control Hub users must change the Wi-Fi password to a non-default password,
+
+B.      smartphone users must enable Airplane Mode,
+
+C.      on ROBOT CONTROLLER and DRIVER STATION Android devices, Wi-Fi must be enabled and Bluetooth must be disabled, and
+
+D.      on DRIVER STATION Android devices, remove all remembered Wi-Fi Direct Groups and Wi-Fi connections, leaving only the ROBOT CONTROLLER Wi-Fi connection.

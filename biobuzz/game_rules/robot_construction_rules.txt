@@ -1,0 +1,90 @@
+R101       *It is your team’s ROBOT. The ROBOT and its MAJOR MECHANISMS must be built by the FIRST Tech Challenge team that has registered for the event and intends to use the ROBOT to participate in MATCHES or as part of judged awards.
+
+A MAJOR MECHANISM is a group of COMPONENTS and/or MECHANISMS assembled together to address at least 1 game challenge: ROBOT movement, SCORING ELEMENT manipulation, FIELD element manipulation, or performance of a scorable task without the assistance of another ROBOT.
+
+This rule requires that the ROBOT and its MAJOR MECHANISMS were built by its team but is not intended to prohibit or discourage assistance from other teams (e.g., fabricating elements, supporting construction, writing software, developing game strategy, contributing COMPONENTS, and/or MECHANISMS).
+
+Examples that would generally not be considered MAJOR MECHANISMS, and thus are not subject to this rule include, but are not limited to:
+
+A.      a gearbox assembly,
+
+B.      a COMPONENT or MECHANISM that is part of a MAJOR MECHANISM, or
+
+C.      COTS items.
+
+The intent of this rule is that a team’s ROBOT is a product that’s representative of the current team members’ experience and is intended to discourage complete solutions which are provided wholly by outside organizations or companies. Also see R301 and R303.
+
+R102       *STARTING CONFIGURATION is limited to an 18-inch Cube. In the STARTING CONFIGURATION (the physical configuration in which a ROBOT starts a MATCH), all parts of the ROBOT must be fully stationary, and the ROBOT must be fully self-contained within an 18 in. (45.70 cm) wide, by 18 in. (45.70 cm) long, by 18 in. (45.70 cm) high volume.
+
+If a ROBOT uses interchangeable MECHANISMS per 3.3 MATCH Eligibility Rules, teams should be prepared to show compliance with this rule and R105 in all configurations.
+
+Any pre-loaded SCORING ELEMENTS may extend outside the starting size constraint.
+
+R103       *ROBOTS may assist in holding the STARTING CONFIGURATION. In the STARTING CONFIGURATION, ROBOTS must be fully self-supported (i.e., does not exert force on the sides or top of a sizing tool). ROBOTS may accomplish this using any combination of:
+
+A.      mechanical means while powered-off, and/or
+
+B.      initializing an OpMode that pre-positions servos and motors to a desired stationary position. OpMode may control motors and servos to hold their position to maintain the STARTING CONFIGURATION.
+
+ROBOTS holding STARTING CONFIGURATION during inspection or waiting for a MATCH to start may have to do so for several minutes and should limit the possibility of thermal failure (e.g., not having motors stalled against a hard stop). Teams should be especially cautious when operating a running ROBOT during inspection, please notify the INSPECTOR that the ROBOT is live.
+
+R104       *There is no ROBOT weight limit. There is no explicit weight limit for FIRST Tech Challenge ROBOTS playing BIOBUZZ.
+
+While there is no official weight limit, teams should still consider the impact of a ROBOT’S weight on various factors including, but not limited to:
+
+-        FIELD TILE damage
+
+-        battery consumption
+
+-        ROBOT transportation
+
+-        overall ROBOT performance
+
+R105       A ROBOT must stay as one assembly, and there are limits to how much it can expand. After the MATCH has started, ROBOTS may expand beyond the STARTING CONFIGURATION but are still subject to sizing constraints relative to the ROBOT, based on the initial STARTING CONFIGURATION. The sizing constraints are:
+
+A.      After the start of the MATCH, ROBOTS may expand beyond the STARTING CONFIGURATION but at all times must remain within a 18 in. (45.70 cm) by 24 in. (61.0 cm) by 29 in. (73.65 cm) tall sizing volume when fully expanded per G416,
+
+B.      ROBOTS must be physically constrained to fit within these limits without the use of software, and
+
+C.      ROBOTS may not be designed to deliberately detach COMPONENTS.
+
+The sizing limit volume is defined relative to the FIELD surface and is oriented such that the 29 in. (73.65 cm) dimension is always the vertical height above the FIELD surface.
+
+Figure 12‑1: Expansion Limit – Top View
+
+Diagram showing Expansion Limit top view.
+
+Figure 12‑2: Expansion Limit – Side View
+
+Diagram showing Expansion Limit - Side View
+
+ 
+
+The sizing volume is defined relative to the FIELD surface and is oriented such that the 29 in. (73.65 cm) dimension is always the vertical height above the FIELD surface.
+
+ROBOTS are measured in “stable” configurations they would use during normal gameplay on the FIELD (i.e., with their wheels all touching the TILES). If a ROBOT is “tilted” slightly due to interactions on the FIELD, this is not a violation of this rule if the ROBOT would still be within the sizing volume when it is returned to a stable configuration.
+
+Teams should be prepared to demonstrate to INSPECTORS that their ROBOT has no configurations where it is outside the sizing volume. ROBOTS must show their maximum mechanical extensions during the inspection process. A ROBOT that can mechanically exceed the sizing limit would be in violation even if the ROBOT has software limiting the position of the extension during the MATCH. (Figure 12‑3)
+
+Figure 12‑3: Expansion Limit – Sizing Limit Violation
+
+Diagram showing Expansion Limit sizing violation
+
+A ROBOT with a single MECHANISM that can extend out of both sides of a ROBOT would be allowed as long as the overall dimension at maximum mechanical extension does not exceed the sizing limit. (Figure 12‑4)
+
+Figure 12‑4: Expansion Limit – Allowable Extension
+
+Diagram showing allowable extension
+
+A ROBOT with multiple MECHANISMS that are not mechanically linked that can extend out of both sides of a ROBOT simultaneously would NOT be allowed if the overall horizontal dimension at maximum mechanical extension exceeds the sizing limit (Figure 12‑5).
+
+Figure 12‑5: Expansion Limit – Simultaneous Extension
+
+Diagrams showing allowable and disallowed simultaneous extensions.
+
+A ROBOT with an extension on a pivot that rotates in the horizontal plane would be allowed as long as the overall dimension does not exceed the sizing limit at any point in its travel (Figure 12‑6).
+
+Figure 12‑6: Expansion Limit – Rotating Extension
+
+Diagram showing allowable rotation example.
+

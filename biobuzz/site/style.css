@@ -1,0 +1,324 @@
+/* BIOBUZZ condensed manual — shared stylesheet.
+   Loaded once, cached by the browser across every page (important on bad venue wifi).
+   Light tokens live on :root; dark tokens only override under prefers-color-scheme. */
+
+:root {
+  --bg: #f7f7f5;
+  --bg-elevated: #ffffff;
+  --text: #1b1b1b;
+  --text-dim: #55554f;
+  --border: #d8d6cf;
+  --border-strong: #b8b6ad;
+  --link: #0a5fb4;
+  --accent: #0a5fb4;
+  --code-bg: #eeede7;
+
+  /* Penalty severity palette — colour-blind-safe: fouls stay in the blue family
+     (never confused with the true card colours), cards use real yellow/red,
+     verbal is green, disabled/disqualified get their own distinct hues.
+     Every pill also always carries its text label — colour is never the only signal. */
+  --pen-verbal-bg: #1e7d32; --pen-verbal-fg: #ffffff;
+  --pen-minor-bg:  #3d7fd1; --pen-minor-fg:  #ffffff;
+  --pen-major-bg:  #16408f; --pen-major-fg:  #ffffff;
+  --pen-yellow-bg: #e0a900; --pen-yellow-fg: #1b1b1b;
+  --pen-red-bg:    #c62828; --pen-red-fg:    #ffffff;
+  --pen-disabled-bg: #5c5f66; --pen-disabled-fg: #ffffff;
+  --pen-dq-bg:     #6a3fa0; --pen-dq-fg:     #ffffff;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --bg-elevated: #1c1c1c;
+    --text: #ececec;
+    --text-dim: #a8a8a0;
+    --border: #3a3a36;
+    --border-strong: #55554d;
+    --link: #7cb6ff;
+    --accent: #7cb6ff;
+    --code-bg: #232320;
+
+    --pen-verbal-bg: #2e9e46; --pen-verbal-fg: #06210b;
+    --pen-minor-bg:  #4f93e8; --pen-minor-fg:  #06172f;
+    --pen-major-bg:  #6f9bee; --pen-major-fg:  #05132e;
+    --pen-yellow-bg: #f2c14e; --pen-yellow-fg: #241a00;
+    --pen-red-bg:    #e05a5a; --pen-red-fg:    #2a0303;
+    --pen-disabled-bg: #8a8d94; --pen-disabled-fg: #131315;
+    --pen-dq-bg:     #a97fe0; --pen-dq-fg:     #1c0c2e;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--link); }
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+/* --- top bar / nav --- */
+header.topbar {
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header.topbar .bar {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+}
+header.topbar .site-name {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: var(--text);
+  text-decoration: none;
+  margin-right: auto;
+}
+header.topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+header.topbar nav a {
+  text-decoration: none;
+  color: var(--text-dim);
+  font-size: 0.92em;
+  padding: 6px 2px;
+}
+header.topbar nav a.current,
+header.topbar nav a:hover {
+  color: var(--accent);
+}
+
+main { padding-top: 18px; }
+
+h1 { font-size: 1.5em; margin: 0 0 4px; }
+h2 { font-size: 1.2em; margin: 1.6em 0 0.5em; }
+h3 { font-size: 1.05em; margin: 1.4em 0 0.4em; }
+h4 { font-size: 1em; margin: 1em 0 0.3em; }
+
+p.manual-ref {
+  color: var(--text-dim);
+  font-size: 0.88em;
+  margin: 0 0 1.2em;
+}
+
+p.disclaimer {
+  color: var(--text-dim);
+  font-size: 0.85em;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 2.5em;
+}
+
+/* --- search box --- */
+.search-box {
+  display: block;
+  width: 100%;
+  font-size: 16px; /* avoid iOS auto-zoom */
+  padding: 10px 12px;
+  margin: 4px 0 18px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+.search-count {
+  color: var(--text-dim);
+  font-size: 0.85em;
+  margin: -12px 0 14px;
+}
+
+/* --- rule cards --- */
+details.rule {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+details.rule > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 14px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  min-height: 24px; /* larger tap target for phones/tablets */
+}
+details.rule > summary::-webkit-details-marker { display: none; }
+details.rule > summary::before {
+  content: "▸";
+  color: var(--text-dim);
+  transition: transform 0.15s ease;
+  flex: none;
+}
+details.rule[open] > summary::before { transform: rotate(90deg); }
+details.rule > summary .rule-id {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  flex: none;
+}
+details.rule > summary .flag {
+  color: var(--pen-yellow-bg);
+}
+.rule-body {
+  padding: 0 14px 14px;
+  border-top: 1px solid var(--border);
+}
+.rule-body > *:first-child { margin-top: 12px; }
+
+.rule-body p { margin: 0.7em 0; }
+
+ul.rule-list, .rule-body ul, .rule-body ol {
+  margin: 0.5em 0;
+  padding-left: 1.3em;
+}
+ul.rule-list li, .rule-body li {
+  margin: 0.35em 0;
+}
+ul.compact-list {
+  list-style: none;
+  margin: 0.5em 0;
+  padding: 8px 10px;
+  background: var(--code-bg);
+  border-radius: 6px;
+  font-size: 0.92em;
+}
+ul.compact-list li { margin: 0.15em 0; }
+
+.table-caption {
+  font-weight: 600;
+  font-size: 0.92em;
+  margin: 0.8em 0 0.3em;
+  color: var(--text-dim);
+}
+
+.figure-note {
+  border-left: 3px solid var(--border-strong);
+  padding: 6px 10px;
+  margin: 0.7em 0;
+  color: var(--text-dim);
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* --- violation clauses & penalty pills --- */
+.violation {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.violation-clause {
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+.violation-clause .pills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.pill {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+.pill.Verbal   { background: var(--pen-verbal-bg);   color: var(--pen-verbal-fg); }
+.pill.Minor    { background: var(--pen-minor-bg);    color: var(--pen-minor-fg); }
+.pill.Major    { background: var(--pen-major-bg);    color: var(--pen-major-fg); }
+.pill.Yellow   { background: var(--pen-yellow-bg);   color: var(--pen-yellow-fg); }
+.pill.Red      { background: var(--pen-red-bg);      color: var(--pen-red-fg); }
+.pill.Disabled { background: var(--pen-disabled-bg); color: var(--pen-disabled-fg); }
+.pill.Disqualified { background: var(--pen-dq-bg);   color: var(--pen-dq-fg); }
+
+.tu-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--code-bg);
+  color: var(--text-dim);
+  border: 1px solid var(--border-strong);
+}
+.tu-badge:hover { color: var(--accent); border-color: var(--accent); }
+
+/* --- tables (spec/part-number tables pulled from the manual) --- */
+.table-wrap { overflow-x: auto; margin: 0.6em 0 1em; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.92em;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 6px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--code-bg); }
+
+/* --- category index / home cards --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 14px 0 28px;
+}
+.card-grid a {
+  display: block;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: var(--text);
+  min-height: 44px; /* tap target */
+}
+.card-grid a:hover { border-color: var(--accent); }
+.card-grid .cat-ref { display: block; color: var(--text-dim); font-size: 0.82em; margin-top: 2px; }
+
+.banner {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 14px 0 20px;
+  font-size: 0.94em;
+}
+
+.cic-item { margin-bottom: 1.1em; }
+
+@media (max-width: 480px) {
+  .wrap { padding: 0 12px 40px; }
+  h1 { font-size: 1.3em; }
+}

@@ -1,0 +1,28 @@
+R901       *Use only a specified DRIVER STATION device. The OPERATOR CONSOLE may only have one approved Android-based DRIVER STATION device connected and powered on. The OPERATOR CONSOLE must have at least one of the following:
+
+A.      REV Driver Hub (REV-31-1596), or
+
+B.      Any Android Device with or without any combination of USB cables (including USB OTG cables) and/or USB hubs (powered or unpowered, with or without OTG integrated into the hub) for connecting one or more gamepads.
+
+Due to unpredictable variations in Android software across different manufacturers and updates, the REV Driver Hub is the only officially supported DRIVER STATION device. Teams choosing to use any other unsupported device (e.g., smartphones) are responsible for testing and verifying its compatibility, functionality, and performance.
+
+Teams who wish to have a spare DRIVER STATION device as part of their OPERATOR CONSOLE may do so as long as only one DRIVER STATION device is connected and powered on at a time.
+
+ 
+
+R902       *The OPERATOR CONSOLE must make the touch screen accessible. The OPERATOR CONSOLE, the set of COMPONENTS and MECHANISMS used by the DRIVE TEAM to relay commands to the ROBOT, must make the touch screen of the DRIVER STATION device accessible. The DRIVER STATION device must be positioned within the OPERATOR CONSOLE so that the screen display can be clearly seen during inspection and in a MATCH. The DRIVER STATION device touch screen must be functional without the requirement of additional aides (e.g., mouse) in order to be used.
+
+R903       *OPERATOR CONSOLE physical requirements. The OPERATOR CONSOLE, including all power sources (e.g., power banks), must not exceed a volume of 3ft wide, 1ft 6in deep and 2 ft tall (91.4 cm by 45.7 cm by 61.0 cm), excluding any items that are held or worn by the DRIVERS during the MATCH.  
+
+Also refer to R203 for restrictions on designing OPERATOR CONSOLES for fair play and ARENA safety.
+
+Please note that while there is no hard weight limit, OPERATOR CONSOLES that weigh more than 20 lbs. (~9 kg.) will invite extra scrutiny as they are likely to disrupt normal ARENA operations.
+
+Teams who wish to have a spare external USB hub as part of the OPERATOR CONSOLE may do so as long as only one USB hub is connected at any time.
+
+The intent of this rule is to allow teams to use a container to store, organize, and transport the DRIVER STATION device and support electronics. The OPERATOR CONSOLE rules are not intended to allow systems that function as a ROBOT cart or replace a competition-provided OPERATOR CONSOLE stand, table, etc.
+
+R904       *ROBOT application wireless communication only. Other than the connection controlled by the ROBOT CONTROLLER app running on the ROBOT and the DRIVER STATION app running on the DRIVER STATION device, no other form of wireless communications shall be used to communicate to, from, or within the OPERATOR CONSOLE during a MATCH.
+
+Examples of prohibited wireless systems include, but are not limited to, active wireless network cards, wireless gamepad communication, and Bluetooth devices.
+
