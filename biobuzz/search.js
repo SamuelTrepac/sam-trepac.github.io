@@ -1,6 +1,9 @@
 // Pure on-page filter over already-loaded <details class="rule"> blocks.
 // No fetch, no dependencies, no external index — works fully offline and
 // is unaffected by back/forward navigation since it never touches history.
+// Search only ever changes which rules are visible, never their open/closed
+// state — that's exclusively the collapse-all button's job, so the two
+// controls never fight each other.
 (function () {
   var box = document.getElementById("rule-search");
   if (!box) return;
@@ -16,8 +19,6 @@
       var match = q === "" || hay.indexOf(q) !== -1;
       el.hidden = !match;
       if (match) shown++;
-      if (q !== "" && match) el.open = true;
-      if (q === "") el.open = el.hasAttribute("data-was-open");
     });
     groups.forEach(function (g) {
       var anyVisible = g.querySelectorAll("details.rule:not([hidden])").length > 0;

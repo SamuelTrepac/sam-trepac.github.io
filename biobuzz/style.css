@@ -133,6 +133,7 @@ p.disclaimer {
 /* --- search box + collapse-all control --- */
 .search-row {
   display: flex;
+  align-items: stretch;
   gap: 8px;
   margin: 4px 0 6px;
 }
@@ -150,12 +151,14 @@ p.disclaimer {
 .collapse-toggle {
   flex: none;
   font-size: 0.9em;
-  padding: 0 14px;
+  padding: 10px 14px;
+  line-height: 1.2;
   border: 1px solid var(--border-strong);
   border-radius: 8px;
   background: var(--bg-elevated);
   color: var(--text);
   cursor: pointer;
+  white-space: nowrap;
 }
 .collapse-toggle:hover { border-color: var(--accent); color: var(--accent); }
 .search-count {
