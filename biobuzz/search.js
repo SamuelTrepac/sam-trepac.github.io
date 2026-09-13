@@ -29,4 +29,13 @@
   }
 
   box.addEventListener("input", apply);
+
+  var collapseBtn = document.getElementById("collapse-toggle");
+  if (collapseBtn) {
+    collapseBtn.addEventListener("click", function () {
+      var collapsing = collapseBtn.textContent.trim() === "Collapse all";
+      rules.forEach(function (el) { el.open = !collapsing; });
+      collapseBtn.textContent = collapsing ? "Expand all" : "Collapse all";
+    });
+  }
 })();
