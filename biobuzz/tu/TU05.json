@@ -1,0 +1,22 @@
+{
+ "tu": "TU05",
+ "date": "2026-10-15",
+ "summary": "G407 and G408: REPEATED CONTROL of 5+ SCORING ELEMENTS or of opponent NECTAR is likely STRATEGIC even with a sorting mechanism. R403: small decorative elements and gaps are okay if the number is legible from 12 ft. Also 10.8.4 FIELD Reset wording (not covered on this site).",
+ "edits": [
+  {
+   "rule": "G407",
+   "old": "active pickup/intaking of more than 4 SCORING ELEMENTS.</p>",
+   "new": "active pickup/intaking of more than 4 SCORING ELEMENTS.</p><p>REPEATED instances of a ROBOT CONTROLLING 5 or more SCORING ELEMENTS are likely to be perceived as STRATEGIC, even if the ROBOT has a “keep 4 and discard the rest” sorting mechanism.</p>"
+  },
+  {
+   "rule": "G408",
+   "old": "<p>A ROBOT may not CONTROL the opponent’s NECTAR.</p>",
+   "new": "<p>A ROBOT may not CONTROL the opponent’s NECTAR.</p><p>REPEATED instances of a ROBOT CONTROLLING an opponent’s NECTAR are likely to be perceived as STRATEGIC, even if the ROBOT has a sorting mechanism that automatically discards opponent NECTAR by returning it to approximately its original state.</p>"
+  },
+  {
+   "rule": "R403",
+   "old": "<p>Examples of prohibited team numbers",
+   "new": "<p>Small decorative elements and gaps in numbers are okay as long as the team number remains legible from 12 feet (3.65 meters) away and is discernable from a quick glance.</p><p>Examples of prohibited team numbers"
+  }
+ ]
+}

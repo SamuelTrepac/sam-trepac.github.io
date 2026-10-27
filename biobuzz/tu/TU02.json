@@ -1,0 +1,47 @@
+{
+ "tu": "TU02",
+ "date": "2026-09-24",
+ "summary": "Table 10-6 violation examples revised (see Violations page). G420 adds that entanglement with exposed or unprotected parts in normal gameplay is likely not a violation. G423/G425 penalties apply to the DRIVE TEAM member's team. G426 allows one additional NECTAR per HIVE TIP and adds notes on re-entry (G427) and timing.",
+ "edits": [
+  {
+   "rule": "G420",
+   "old": "<p>Examples of actions that are likely to be perceived as STRATEGIC include, but are not limited to:</p><ul class=\"rule-list\"><li>A. using",
+   "new": "<p>The attachment to, or entanglement with, exposed or unprotected COMPONENTS or MECHANISMS in the course of normal gameplay is not likely to be considered a violation of this rule. This includes, but is not limited to:</p><ul class=\"rule-list\"><li>A. exposed or unprotected wiring, or</li><li>B. a delicately constructed MECHANISM (such as an intake).</li></ul><p>Examples of actions that are likely to be perceived as STRATEGIC include, but are not limited to:</p><ul class=\"rule-list\"><li>C. using"
+  },
+  {
+   "rule": "G420",
+   "old": "<li>B. making frame-to-frame",
+   "new": "<li>D. making frame-to-frame"
+  },
+  {
+   "rule": "G420",
+   "old": "<li>C. causing an opponent",
+   "new": "<li>E. causing an opponent"
+  },
+  {
+   "rule": "G423",
+   "old": "<p>If a team is facing extenuating",
+   "new": "<p>The penalty is applied to the team to which the DRIVE TEAM member that violates the rule belongs.</p><p>If a team is facing extenuating"
+  },
+  {
+   "rule": "G425",
+   "old": "the penalty is applied to the DRIVE TEAM member regardless",
+   "new": "the penalty is applied to the team to which the DRIVE TEAM member belongs regardless"
+  },
+  {
+   "rule": "G426",
+   "old": "<li>A. each time the HIVE of their corresponding ALLIANCE color is TIPPED, one NECTAR",
+   "new": "<li>A. for each time the HIVE of their corresponding ALLIANCE color is TIPPED, one additional NECTAR"
+  },
+  {
+   "rule": "G426",
+   "old": "60 seconds left in the MATCH.</p>",
+   "new": "60 seconds left in the MATCH.</p><p>NECTAR that leaves the FIELD may be re-entered at any time as described in G427.</p>"
+  },
+  {
+   "rule": "G426",
+   "old": "they are not entering NECTAR too early.</p>",
+   "new": "they are not entering NECTAR too early.</p><p>NECTAR does not have to be entered into the FIELD immediately when a HIVE TIP occurs.</p>"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "tu": "TU03",
+ "date": "2026-10-01",
+ "summary": "G304.G: pre-loaded POLLEN must be fully contained on the ROBOT's own ALLIANCE side of the FIELD (matching 10.3.4 ROBOTS setup).",
+ "edits": [
+  {
+   "rule": "G304",
+   "old": "10.3.1 SCORING ELEMENTS, and</li>",
+   "new": "10.3.1 SCORING ELEMENTS fully contained on its own ALLIANCE side of the FIELD, and</li>"
+  }
+ ]
+}

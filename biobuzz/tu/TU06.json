@@ -1,0 +1,17 @@
+{
+ "tu": "TU06",
+ "date": "2026-10-22",
+ "summary": "G401.B: the stop button exception no longer mentions Head REFEREE instruction per T402. G402 adds examples of AUTO disruption (CONTROLLING SCORING ELEMENTS or contacting an opposing ROBOT on their side). Also Digital Animation Award (6.6.1), Inspection Checklist 26-27.2, updated field checklist links.",
+ "edits": [
+  {
+   "rule": "G401",
+   "old": "stop button either at the team’s discretion or instruction of the Head REFEREE per T402, or",
+   "new": "stop button at the team’s discretion, or"
+  },
+  {
+   "rule": "G402",
+   "old": "<p>SCORING ELEMENTS that happen",
+   "new": "<p>Examples of actions that are considered disruption of AUTO include but are not limited to:</p><ul class=\"rule-list\"><li>A. CONTROLLING SCORING ELEMENTS located on the opposing ALLIANCE’S side of the field, and</li><li>B. contact an opposing ROBOT on their side of the FIELD.</li></ul><p>SCORING ELEMENTS that happen"
+  }
+ ]
+}

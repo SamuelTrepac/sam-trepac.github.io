@@ -1,0 +1,12 @@
+{
+ "tu": "TU01",
+ "date": "2026-09-17",
+ "summary": "G204 example B now references G427 instead of G426. Also: Figure 9-10 HIVE dimension corrected, duplicated text removed from 10.6.1, Question Box wording changed to STUDENT representatives (sections not covered on this site).",
+ "edits": [
+  {
+   "rule": "G204",
+   "old": "in violation of G426.</li>",
+   "new": "in violation of G427.</li>"
+  }
+ ]
+}
