@@ -1,0 +1,27 @@
+{
+ "tu": "TU07",
+ "date": "2026-10-29",
+ "summary": "G304: the 4 POLLEN pre-loads are specifically allocated to each team per 10.3.1; other POLLEN a ROBOT touches at setup don't count toward its pre-load. G412: subsequent violations are now DISABLED and YELLOW CARD per MATCH. G419: examples F and G reworded; disconnecting a battery or powering off a ROBOT is an example of a ROBOT no longer able to drive, instead of automatically a RED CARD.",
+ "edits": [
+  {
+   "rule": "G304",
+   "old": "<p>Each ROBOT must start contacting 4 POLLEN either located in or on the ROBOT, or on the TILES contacting the ROBOT. ROBOTS",
+   "new": "<p>Each ROBOT must start contacting 4 pre-load POLLEN either located in or on the ROBOT, or on the TILES contacting the ROBOT. These pre-load POLLEN are specifically allocated as 4 for each team as described in Section 10.3.1 SCORING ELEMENTS. ROBOTS may contact other POLLEN setup on the FIELD, but these do not count towards their pre-load requirement. ROBOTS"
+  },
+  {
+   "rule": "G412",
+   "old": "<span class=\"pills\"><span class=\"pill Yellow\">Yellow Card</span></span>YELLOW CARD per MATCH, if subsequent",
+   "new": "<span class=\"pills\"><span class=\"pill Disabled\">Disabled</span><span class=\"pill Yellow\">Yellow Card</span></span>DISABLED and YELLOW CARD per MATCH, if subsequent"
+  },
+  {
+   "rule": "G419",
+   "old": "battery (this example also clearly results in a RED CARD because the ROBOT is no longer able to drive), or",
+   "new": "battery (this is also an example of a ROBOT no longer able to drive), or"
+  },
+  {
+   "rule": "G419",
+   "old": "power switch. (This example also clearly results in a RED CARD because the ROBOT is no longer able to drive.)",
+   "new": "power switch. (This is also an example of a ROBOT no longer able to drive.)"
+  }
+ ]
+}

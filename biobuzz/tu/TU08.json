@@ -1,0 +1,17 @@
+{
+ "tu": "TU08",
+ "date": "2026-11-05",
+ "summary": "G405: SCORING ELEMENTS that leave the FIELD because a ROBOT blocked another ROBOT's scoring attempt are not deliberate ejections. R612: sliding contacts and slip rings on critical power paths must be unmodified COTS; custom ones are prohibited. Also T402 (REFEREES may only DISABLE a ROBOT as a consequence of a rule violation; not covered on this site).",
+ "edits": [
+  {
+   "rule": "G405",
+   "old": "during scoring attempts or as the result of ROBOT-to-ROBOT interactions",
+   "new": "during scoring attempts, as the result of a ROBOT blocking another ROBOT’s scoring attempt, or as the result of ROBOT-to-ROBOT interactions"
+  },
+  {
+   "rule": "R612",
+   "old": "D. power regulating devices and actuators.</li></ul>",
+   "new": "D. power regulating devices and actuators.</li></ul><p>Dynamic electrical interfaces (including linear sliding contacts) or continuous-rotation electrical interfaces (including slip rings) placed along any of these pathways must be unmodified COTS items; custom or fabricated electrical interfaces of this type are prohibited.</p>"
+  }
+ ]
+}
